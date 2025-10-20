@@ -21,6 +21,36 @@ body {
   padding: 50px 0px;
 }
 
+.center-image {
+    position: absolute;
+    bottom: 80px;              /* Ảnh nằm ngay trên dòng chữ */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 280px;
+    border-radius: 15px;
+    /* box-shadow: 0 0 15px #ff66cc; */
+    opacity: 0;
+    animation: fadeIn 2s ease-in-out forwards 1.5s;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateX(-50%) scale(0.9); }
+    to { opacity: 1; transform: translateX(-50%) scale(1); }
+  }
+
+ #greeting {
+    font-size: 22px;
+    color: white;
+    font-family: "Segoe UI", sans-serif;
+    text-align: center;
+    text-shadow: 0 0 5px #fff, 0 0 10px #ff66cc, 0 0 20px #ff3399;
+    white-space: pre-wrap; /* để giữ khoảng trắng và xuống dòng nếu có */
+  }
+
+  /* @keyframes blink {
+    50% { border-color: transparent; }
+  }
+   */
 .night {
   position: fixed;
   left: 50%;
